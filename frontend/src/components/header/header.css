@@ -42,11 +42,12 @@ header {
   width: 22rem;
   height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
 }
 
 /* SCROLL DOWN */
@@ -59,21 +60,34 @@ header {
   font-size: 0.9rem;
 }
 
-/* MEDIA QUERIES (MEDIUM SCREENS) */
+/* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
   header {
-    width: 68vh;
+    height: 68vh;
   }
 }
 
-/* MEDIA QUERIES (SMALL SCREENS) */
+/* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
   header {
-    width: 100vh;
+    height: 100vh;
+    padding-top: 4rem;
   }
 
   .header__socials,
   .scroll__down {
     display: none;
+  }
+
+  .me {
+    width: 94%;
+    max-width: 20rem;
+    margin-top: 2.5rem;
+    justify-content: center;
+  }
+
+  .cta {
+    margin-top: 1.7rem;
+    gap: 1rem;
   }
 }
